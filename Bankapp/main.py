@@ -97,16 +97,19 @@ bank = Bank()
 # Create customers
 customer1 = bank.create_customer("Adam", "Doe")
 customer2 = bank.create_customer("Ella", "Walter")
+customer3 = bank.create_customer('Sheldon','Smith')
 
 # Create accounts for customers
 account1 = bank.create_account(customer1)
 account2 = bank.create_account(customer2)
+account3 = bank.create_account(customer3)
 
 # Deposit and charge on accounts
-account1.deposit(1000)
-account2.deposit(500)
-account1.charge(200)
-account2.charge(100)
+account1.deposit(1200)
+account2.deposit(600)
+account3.deposit(1000)
+account1.charge(300)
+account2.charge(200)
 
 # Transfer funds from account1 to account2
 try:
